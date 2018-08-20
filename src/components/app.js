@@ -1,9 +1,17 @@
-import React, { Component } from 'react';
+import React from 'react';
+import { Component } from 'react';
+
+import EmployeeList from '../containers/employee-record-list';
+import EmployeeDetail from '../containers/employee-detail';
+
 
 export default class App extends Component {
-  render() {
-    return (
-      <div>React simple starter</div>
-    );
+  render(){
+    return(
+      <div>
+        <EmployeeList />
+        <EmployeeDetail />
+      </div>
+    )
   }
 }
